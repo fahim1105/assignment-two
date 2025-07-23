@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* Font Style */
 
 .noto-serif-font {
@@ -10,6 +10,14 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Colors */
  .dark-01{
     color: #000000;
@@ -111,7 +119,7 @@ body{
  .price{
     font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 7px;
     margin-bottom: 30px;
  }
  .card-01-button{
@@ -124,8 +132,44 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
+    margin-top: 50px;
  }
  .card-01-full-container{
     margin-top: 120px;
     text-align: center;
  }
+ /* Card-01 Responsive */
+
+@media screen and (max-width:576px) {
+    .card-01-container{
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+    }
+    .card-01-title{
+        font-size: 24px;
+    }
+    .card-01-description{
+        font-size: 14px;
+    }
+    .card-01-image{
+        width: 170px;
+    }
+    .name{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .price{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .card-01-button{
+    width: 170px;
+    height: 50px;
+ }
+ .card-01-container{
+    margin-top: 25px;
+ }
+ .card-01-full-container{
+    margin-top: 65px;
+ }
+}
