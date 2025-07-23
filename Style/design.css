@@ -68,9 +68,9 @@ body{
         display: none;
     }
     body{
-        max-width: 544px;
-        margin: 0 16px;
-    }
+      max-width: 526px;
+      margin: 0 25px;
+   }
  }
 
 /* Design Banner Section */
@@ -99,7 +99,7 @@ body{
         font-size: 15px;
      }
      .hero-image{
-        width: 400px;
+        width: 370px;
      }
  }
  /* Design Card Section */
@@ -172,4 +172,50 @@ body{
  .card-01-full-container{
     margin-top: 65px;
  }
+}
+/* Design Plant Lover Section */
+.plant-lover-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.plant-lover-list{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.plant-lover-container{
+    gap: 350px;
+    margin-top: 200px;
+    display: flex;
+
+}
+.plant-lover-image{
+    position: absolute;
+}
+.trusted-icon{
+   position: relative;
+   width: 286px;
+   transform:translate(370px,-130px) ;
+}
+/* Plant Lover Responsive */
+
+@media screen and (max-width:576px){
+    .plant-lover-container{
+      flex-direction: column;
+      margin-top: 45px;
+    }
+    .plant-lover-image{
+      width: 370px;
+    }
+    .trusted-icon{
+      display: none;
+    }
+    .plant-lover-text-container{
+      margin-top: 80px;
+    }
+    .plant-lover-title{
+      font-size: 24px;
+    }
+   .plant-lover-list{
+      font-size: 12px;
+   }
 }
