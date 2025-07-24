@@ -361,7 +361,17 @@ body{
    border: none;
    color: white;
    margin-left: -2px;
-   transition: background-color 0.3s ease-in , font-size 0.3s linear 0.1s;
+   transform: scale(0.75);
+   transition: background-color 0.3s ease-in;
+   animation: up-down 3s linear infinite alternate;
+}
+@keyframes up-down {
+   0%{
+      transform: scale(0.8);
+   }
+   100%{
+      transform: scale(1);
+   }
 }
 
 /* Colorful Bunch Responsive */
@@ -454,7 +464,6 @@ nav ul li a:hover{
 }
 .subscribe:hover{
    background-color: #000000;
-   font-size: 15px;
 }
 .footer-button-01 ul a:hover{
    color: #E95A08;
