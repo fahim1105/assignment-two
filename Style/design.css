@@ -320,3 +320,53 @@ body{
    font-weight: 500;
    }
 }
+
+/* Design Colorful Bunch Section */
+
+.colorful-bunch-container{
+   background-image: url('../assets/news-letter-bg.png');
+   background-repeat: no-repeat;
+   width: 1140px;
+   height: 435px;
+   text-align: center;
+   padding-top:150px ;
+   margin-top: 120px;
+}
+.colorful-bunch-title{
+   font-size: 50px;
+   font-weight: bold;
+   color: white;
+}
+.email{
+   width: 640px;
+   height: 45px; 
+}
+.subscribe{
+   width: 186px;
+   height: 50px; 
+   background-color: #E95A08;
+   border: none;
+   color: white;
+   margin-left: -5px;
+}
+
+/* Colorful Bunch Responsive */
+
+@media screen and (max-width:576px){
+   .colorful-bunch-container{
+   background-size: cover;
+   width: 365px;
+   height: 145px;
+   padding-top:55px ;
+   margin-top: 50px;
+   }
+   .colorful-bunch-title{
+   font-size: 17px;
+   }
+   .email{
+   width: 205px;
+   }
+   .subscribe{
+   width: 90px;
+   }
+}
