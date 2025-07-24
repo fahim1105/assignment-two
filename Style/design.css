@@ -196,7 +196,15 @@ body{
    position: relative;
    width: 286px;
    transform: translate(370px,-130px);
-
+   animation: spin 11s linear infinite;
+}
+@keyframes spin {
+   0%{
+      transform: translate(370px,-130px) rotate(0deg);
+   }
+   100%{
+      transform: translate(370px,-130px) rotate(360deg);   
+   }
 }
 /* Plant Lover Responsive */
 
@@ -352,7 +360,7 @@ body{
    background-color: #E95A08;
    border: none;
    color: white;
-   margin-left: -3px;
+   margin-left: -2px;
    transition: background-color 0.3s ease-in , font-size 0.3s linear 0.1s;
 }
 
@@ -386,7 +394,7 @@ body{
 .footer-button-01 ul a{
    text-decoration: none;
    color:rgba(0, 0, 0, 0.5);
-   transition: font-size 0.3s linear 0.01s, color 0.3s ease-in;
+   transition: color 0.3s ease-in;
 }
 .footer-button-02 ul li{
    list-style: none;
@@ -394,7 +402,7 @@ body{
 .footer-button-02 ul a{
    text-decoration: none;
    color:rgba(0, 0, 0, 0.5);
-   transition: font-size 0.3s linear 0.01s, color 0.3s ease-in;
+   transition: color 0.3s ease-in;
 }
 .footer-list-01{
    display: flex;
@@ -435,7 +443,7 @@ footer{
    }
 }
 
-/* Let Play With Hover */
+/* Let's Play With Hover */
 nav ul li a:hover{
    font-size: 20px ;
    color: #E95A08;
@@ -449,10 +457,14 @@ nav ul li a:hover{
    font-size: 15px;
 }
 .footer-button-01 ul a:hover{
-   font-size: 20px ;
    color: #E95A08;
 }
 .footer-button-02 ul a:hover{
-   font-size: 20px ;
    color: #E95A08;
+}
+
+/* Let's Play With Focus */
+.colorful-bunch-container input:focus{
+   color: #E95A08;
+   outline-color: #E95A08;
 }
