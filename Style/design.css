@@ -136,6 +136,10 @@ body{
     gap: 30px;
     margin-top: 50px;
  }
+ .card-01-container img{
+      width: 265px; 
+      height: 322px;
+ }
  .card-01-full-container{
     margin-top: 120px;
     text-align: center;
@@ -153,9 +157,13 @@ body{
     .card-01-description{
         font-size: 14px;
     }
-    .card-01-image{
+    /* .card-01-image{
         width: 170px;
-    }
+    } */
+   .card-01-container img{
+      width: 170px; 
+      height: 210px;
+ }
     .name{
         font-size: 1rem;
         margin-top: 20px;
@@ -379,7 +387,7 @@ body{
 @media screen and (max-width:576px){
    .colorful-bunch-container{
    background-size: cover;
-   width: 410px;
+   width: 420px;
    height: 160px;
    padding-top:40px ;
    margin-top: 50px;
