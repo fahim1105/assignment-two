@@ -186,7 +186,6 @@ body{
     gap: 350px;
     margin-top: 200px;
     display: flex;
-
 }
 .plant-lover-image{
     position: absolute;
@@ -326,10 +325,11 @@ body{
 .colorful-bunch-container{
    background-image: url('../assets/news-letter-bg.png');
    background-repeat: no-repeat;
-   width: 1140px;
+   width: 1440px;
    height: 435px;
    text-align: center;
    padding-top:150px ;
+   margin-left: -150px;
    margin-top: 120px;
 }
 .colorful-bunch-title{
@@ -339,7 +339,8 @@ body{
 }
 .email{
    width: 640px;
-   height: 45px; 
+   height: 48px; 
+   border: none;
 }
 .subscribe{
    width: 186px;
@@ -355,10 +356,11 @@ body{
 @media screen and (max-width:576px){
    .colorful-bunch-container{
    background-size: cover;
-   width: 365px;
-   height: 145px;
-   padding-top:55px ;
+   width: 420px;
+   height: 160px;
+   padding-top:40px ;
    margin-top: 50px;
+   margin-left: -30px;
    }
    .colorful-bunch-title{
    font-size: 17px;
@@ -370,3 +372,7 @@ body{
    width: 90px;
    }
 }
+
+/* Design Footer Section */
+
+
