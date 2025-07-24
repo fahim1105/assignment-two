@@ -46,7 +46,8 @@ body{
     list-style: none;
  }
  nav a{
-    text-decoration: none;
+      text-decoration: none;
+      transition: font-size 0.3s linear 0.01s, color 0.3s ease-in;
  }
  nav{
     display: flex;
@@ -99,7 +100,7 @@ body{
         font-size: 15px;
      }
      .hero-image{
-        width: 370px;
+        width: 375px;
      }
  }
  /* Design Card Section */
@@ -127,6 +128,7 @@ body{
     border: none;
     width: 270px;
     height: 50px;
+    transition: background-color 0.3s ease-in , font-size 0.3s linear 0.1s;
  }
  .card-01-container{
     display: grid;
@@ -193,7 +195,8 @@ body{
 .trusted-icon{
    position: relative;
    width: 286px;
-   transform:translate(370px,-130px) ;
+   transform: translate(370px,-130px);
+
 }
 /* Plant Lover Responsive */
 
@@ -341,6 +344,7 @@ body{
    width: 640px;
    height: 48px; 
    border: none;
+   padding-left: 20px;
 }
 .subscribe{
    width: 186px;
@@ -348,7 +352,8 @@ body{
    background-color: #E95A08;
    border: none;
    color: white;
-   margin-left: -5px;
+   margin-left: -3px;
+   transition: background-color 0.3s ease-in , font-size 0.3s linear 0.1s;
 }
 
 /* Colorful Bunch Responsive */
@@ -356,7 +361,7 @@ body{
 @media screen and (max-width:576px){
    .colorful-bunch-container{
    background-size: cover;
-   width: 420px;
+   width: 410px;
    height: 160px;
    padding-top:40px ;
    margin-top: 50px;
@@ -380,14 +385,16 @@ body{
 }
 .footer-button-01 ul a{
    text-decoration: none;
-   color:rgba(0, 0, 0, 0.5)
+   color:rgba(0, 0, 0, 0.5);
+   transition: font-size 0.3s linear 0.01s, color 0.3s ease-in;
 }
 .footer-button-02 ul li{
    list-style: none;
 }
 .footer-button-02 ul a{
    text-decoration: none;
-   color:rgba(0, 0, 0, 0.5)
+   color:rgba(0, 0, 0, 0.5);
+   transition: font-size 0.3s linear 0.01s, color 0.3s ease-in;
 }
 .footer-list-01{
    display: flex;
@@ -403,17 +410,19 @@ footer{
    display: flex;
    justify-content: space-around;
    gap: 80px;
+   margin-top: 20px;
+   margin-bottom: 50px;
 }
 .footer-links{
    display: flex;
    gap: 20px;
 }
-
 /* Footer Responsive */
 
 @media screen and (max-width:576px){
    footer{
       flex-direction: column;
+      margin-top: 40px;
    }
    .footer-button-01{
       margin-top: -90px;
@@ -424,4 +433,26 @@ footer{
    .footer-links{
       margin-top: -50px;
    }
+}
+
+/* Let Play With Hover */
+nav ul li a:hover{
+   font-size: 20px ;
+   color: #E95A08;
+}
+.card-01-button:hover{
+   background-color: #000000;
+   font-size: 15px;
+}
+.subscribe:hover{
+   background-color: #000000;
+   font-size: 15px;
+}
+.footer-button-01 ul a:hover{
+   font-size: 20px ;
+   color: #E95A08;
+}
+.footer-button-02 ul a:hover{
+   font-size: 20px ;
+   color: #E95A08;
 }
